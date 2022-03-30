@@ -37,8 +37,3 @@ class FakeAccount:
     @property
     def secret_answer(self):
         return int(''.join(choice(self.DIGITS) for _ in range(4)))
-
-
-if __name__ == '__main__':
-    ac = FakeAccount()
-    print(ac.username, ac.password, ac.secret_answer)
